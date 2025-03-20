@@ -1,0 +1,11 @@
+framework module gtm_ios {
+  umbrella header "gtm_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module gtm_ios.Swift {
+  header "gtm_ios-Swift.h"
+  requires objc
+}

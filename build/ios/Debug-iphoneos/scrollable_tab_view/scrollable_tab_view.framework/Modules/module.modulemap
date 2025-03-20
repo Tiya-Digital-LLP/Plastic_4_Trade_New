@@ -1,0 +1,11 @@
+framework module scrollable_tab_view {
+  umbrella header "scrollable_tab_view-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module scrollable_tab_view.Swift {
+  header "scrollable_tab_view-Swift.h"
+  requires objc
+}

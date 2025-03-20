@@ -1,0 +1,2 @@
+/Users/chandrakantviradiya/Documents/plastic4tradeNew 21022024/android/app/.cxx/RelWithDebInfo/1315m6sl/x86_64/CMakeFiles/edit_cache.dir
+/Users/chandrakantviradiya/Documents/plastic4tradeNew 21022024/android/app/.cxx/RelWithDebInfo/1315m6sl/x86_64/CMakeFiles/rebuild_cache.dir

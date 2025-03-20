@@ -1,0 +1,6 @@
+framework module gtm_ios {
+  umbrella header "gtm_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

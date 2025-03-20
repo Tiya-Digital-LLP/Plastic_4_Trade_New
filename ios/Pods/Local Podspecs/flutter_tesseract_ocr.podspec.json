@@ -1,0 +1,37 @@
+{
+  "name": "flutter_tesseract_ocr",
+  "version": "0.3.4",
+  "summary": "Tesseract OCR 4 Flutter",
+  "description": "Tesseract 4 adds a new neural net (LSTM) based OCR engine which is focused on line recognition. It has unicode (UTF-8) support, and can recognize more than 100 languages.",
+  "homepage": "https://paratoner.io",
+  "license": {
+    "file": "../LICENSE",
+    "type": "BSD"
+  },
+  "authors": {
+    "Ahmet Tok": "arny@paratoner.io"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "Flutter": [
+
+    ],
+    "SwiftyTesseract": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "visionos": null,
+    "watchos": null
+  }
+}

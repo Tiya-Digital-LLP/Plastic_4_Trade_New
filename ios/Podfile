@@ -1,0 +1,40 @@
+platform :ios, '16' # Make sure the deployment target is consistent
+
+# CocoaPods analytics sends network stats synchronously affecting flutter build latency.
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+project 'Runner', {
+  'Debug' => :debug,
+  'Profile' => :release,
+  'Release' => :release,
+}
+
+flutter_root = '/Users/chandrakantviradiya/Documents/FlutterDev/sdk/flutter'
+
+require File.expand_path(File.join(flutter_root, 'packages', 'flutter_tools', 'bin', 'podhelper'))
+
+flutter_ios_podfile_setup
+
+target 'Runner' do
+  # Use static frameworks to resolve the issue
+  use_frameworks! :linkage => :static
+  # Disable modular headers for Firebase
+  pod 'Firebase/Messaging', :modular_headers => false
+  pod 'Firebase/DynamicLinks', :modular_headers => false
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+    # Workaround for Xcode 12 and Firebase
+    target.build_configurations.each do |config|
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      # # Add GCC preprocessor definitions
+      # config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+      #   '$(inherited)',
+      #   'PERMISSION_CONTACTS=1'
+      # ]
+    end
+  end
+end

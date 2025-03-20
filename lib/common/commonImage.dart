@@ -1,0 +1,2 @@
+const String chatErrorImage = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7yH1FaTH5yF5pWDRtfOmrur0xUvWWuTdFyecidCFm1jVr1Qfj";
+const String profileErrorImage = "https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png";

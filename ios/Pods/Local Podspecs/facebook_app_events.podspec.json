@@ -1,0 +1,33 @@
+{
+  "name": "facebook_app_events",
+  "version": "0.0.1",
+  "summary": "Flutter plugin for Facebook Analytics and App Events",
+  "description": "Flutter plugin for Facebook Analytics and App Events",
+  "homepage": "https://github.com/oddbit/flutter_facebook_app_events",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Oddbit Team": "opensource@oddbit.id"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "static_framework": true,
+  "dependencies": {
+    "Flutter": [],
+    "FBSDKCoreKit": [
+      "~> 17.0"
+    ],
+    "FBAudienceNetwork": [
+      "6.16"
+    ]
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_version": "5.0"
+}
